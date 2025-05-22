@@ -2,10 +2,12 @@ package program4;
 class Course {
     String name;
     int marks;
+    int id;
 
-    Course(String name, int marks) {
+    Course(String name, int marks, int id) {
         this.name = name;
         this.marks = marks;
+        this.id = id;
     }
 }
 
@@ -15,9 +17,9 @@ class Student {
     int semester = 4;
 
     Course[] courses = {
-        new Course("BDA", 35),
-        new Course("Java", 75),
-        new Course("Devops", 30)
+        new Course("BDA", 35, 101),
+        new Course("Java", 75, 102),
+        new Course("Devops", 30, 103),
     };
 
     void displayInfo() {
